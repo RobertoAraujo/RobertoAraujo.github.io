@@ -37,12 +37,22 @@
 - title: Digitalinnovation One
   title-url: https://digitalinnovation.one/
   date: jun 2021 - jun 2021
-  subtitle: Desenvolvimento avançado em Java
+  subtitle: Desenvolvimento básico em Java
   tags:
     - tag: Java 8
+    - tag: Introdução 
+    - tag: Primeiro software
+  timeline-side: left
+
+  - title: Digitalinnovation One
+  title-url: https://digitalinnovation.one/
+  date: jul 2021 - jul 2021
+  subtitle: Desenvolvimento avançado em Java
+  tags:
+    - tag: Java 
     - tag: Jsf
     - tag: Primefaces
-  timeline-side: left
+  timeline-side: right
 
 - title: Super University
   title-url: https://example.com/
