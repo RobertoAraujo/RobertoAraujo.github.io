@@ -34,15 +34,15 @@
     - tag: Heroku
   timeline-side: right
 
-- title: Google
-  title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
+- title: Digitalinnovation One
+  title-url: https://digitalinnovation.one/
+  date: jun 2021 - jun 2021
+  subtitle: Desenvolvimento avançado em Java
   tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
-  timeline-side: right
+    - tag: Java 8
+    - tag: Jsf
+    - tag: Primefaces
+  timeline-side: left
 
 - title: Super University
   title-url: https://example.com/
