@@ -17,21 +17,26 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: União Educacional do Norte - UNINORTE 
-  title-url: https://www.uninorteac.edu.br/
-  date: 2012 - 2016 
-  subtitle: Analise de Sistemas
+- title:  LAMPP-IT Solutions
+  title-url: https://www.lampp-it.com.br/quemsomos.html
+  date: 2021 - 2021
+  subtitle: Analista Desenvoldedor
   tags:
-    - tag: React
-    - tag: Javascript
-    - tag: Ruby
-    - tag: Php
-    - tag: Java
-    - tag: Angular
-    - tag: Oracle
+    - tag: java 
+    - tag: Mysql, Oracle, Postgresql
+    - tag: Spring, Jsf, Primefaces
+  timeline-side: left 
+
+- title: Recol distribuidora LTDA
+  title-url: http://gruporecol.net/v/empresas/recol-distribuidora/
+  date: 2020 - 2020
+  subtitle: Analista Desenvoldedor
+  tags:
+    - tag: Php 
     - tag: Mysql
-    - tag: Postgres
-    - tag: Heroku
+    - tag: Html
+    - tag: Css
+    - tag: JavaScript
   timeline-side: right
 
 - title: Digitalinnovation One
@@ -55,40 +60,21 @@
     - tag: Primefaces
   timeline-side: right
 
-- title:  LAMPP-IT Solutions
-  title-url: https://www.lampp-it.com.br/quemsomos.html
-  date: 2021 - 2021
-  subtitle: Analista Desenvoldedor
-  tags:
-    - tag: java 
-    - tag: Mysql, Oracle, Postgresql
-    - tag: Spring, Jsf, Primefaces
-  timeline-side: left 
-
-- title: Recol distribuidora LTDA
-  title-url: http://gruporecol.net/v/empresas/recol-distribuidora/
-  date: 2020 - 2020
-  subtitle: Analista Desenvoldedor
-  tags:
-    - tag: Php 
-    - tag: Mysql
-    - tag: Html
-    - tag: Css
-    - tag: JavaScript
-  timeline-side: right
-
-- title: Facebook
-  title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+- title: União Educacional do Norte - UNINORTE 
+  title-url: https://www.uninorteac.edu.br/
+  date: 2012 - 2016 
+  subtitle: Analise de Sistemas
   tags:
     - tag: React
-    - tag: Node
     - tag: Javascript
-  timeline-side: right
-
-- title: Super University
-  title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+    - tag: Ruby
+    - tag: Php
+    - tag: Java
+    - tag: Angular
+    - tag: Oracle
+    - tag: Mysql
+    - tag: Postgres
+    - tag: Heroku
   timeline-side: left
+  
+
