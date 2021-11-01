@@ -32,9 +32,11 @@ twitter_username: exampleUser
 # > setting this to false, will omit the About Me section
 show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
-about_me_title: About Me
+about_me_title: Sobre Mim
 # about_me_description: This will be displayed under the title.
-about_me_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. If you like this theme and want to use it for yourself, checkout the source code and the documentation at <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>. You can also find me on <a class="highlight-link" href="https://jamstackthemes.dev/theme/jekyll-neumorphism/" target="_blank" rel="noreferrer">JAMstack Themes</a> and on <a class="highlight-link" href="https://jekyll-themes.com/neumorphism/" target="_blank" rel="noreferrer">Jekyll Themes</a>.
+about_me_description: Suprir as expectativas da empresa desenvolvendo as minhas atividades profissionais com responsabilidade, contribuindo assim para o crescimento da empresa. Sou uma pessoa comunicativa, tenho facilidade em assimilar tarefa e estou sempre disposto a vivenciar novos desafios e
+experiências. visite meu github <a class="highlight-link" href="https://github.com/RobertoAraujo" target="_blank" rel="noreferrer"> Github </a>. Você também pode me encontrar no linkedin <a class="highlight-link" href="https://www.linkedin.com/in/roberto-ara%C3%BAjo-de-moraes-1a280587/" target="_blank" rel="noreferrer">linkedin</a>
+e em <a class="highlight-link" href="https://m.infojobs.com.br/Candidate/CV/Insert2.aspx" target="_blank" rel="noreferrer">infojobs</a>.
 
 # SKILLS SECTION
 # show_skills_card:
