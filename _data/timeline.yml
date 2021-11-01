@@ -20,7 +20,7 @@
 - title:  LAMPP-IT Solutions
   title-url: https://www.lampp-it.com.br/quemsomos.html
   date: 2021 - 2021
-  subtitle: Analista Desenvoldedor
+  subtitle: Analista Desenvoldedor - Junior
   tags:
     - tag: java, Spring, Jsf, Primefaces, t 
     - tag: Mysql, Oracle, Postgresql
@@ -42,16 +42,6 @@
     - tag: JavaScript
   timeline-side: right
 
-- title: Digitalinnovation One
-  title-url: https://digitalinnovation.one/
-  date: 2021 - 2021
-  subtitle: Desenvolvimento básico em Java
-  tags:
-    - tag: Java 8
-    - tag: Introdução 
-    - tag: Primeiro software
-  timeline-side: left
-
 - title: Digitalinnovation 
   title-url: https://digitalinnovation.one/
   date:  2021 - 2021
@@ -61,6 +51,16 @@
     - tag: Jsf
     - tag: Spring
     - tag: Primefaces
+  timeline-side: left
+
+- title: Digitalinnovation One
+  title-url: https://digitalinnovation.one/
+  date: 2021 - 2021
+  subtitle: Desenvolvimento básico em Java
+  tags:
+    - tag: Java 8
+    - tag: Introdução 
+    - tag: Primeiro software
   timeline-side: right
 
 - title: União Educacional do Norte - UNINORTE 
