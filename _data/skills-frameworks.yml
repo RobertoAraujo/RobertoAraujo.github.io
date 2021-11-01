@@ -17,17 +17,20 @@
 - name: Node
   weight: 1
 
-- name: Flutter
-  weight: 2
-
-- name: Express
-  weight: 3
-
-- name: Django
-  weight: 1
-
 - name: Spring
   weight: 2
 
-- name: Rails
+- name: OpenSSl
+  weight: 3
+
+- name: Primefaces
+  weight: 1
+
+- name: Thymeleaf
+  weight: 2
+
+- name: bootstrap
   weight: 4
+
+- name: Jsf
+  weight: 2

@@ -9,13 +9,13 @@
   weight: 5
 
 - name: Bash
-  weight: 3
+  weight: 1
 
 - name: Scrum
   weight: 3
 
-- name: Travis CI
-  weight: 1
+- name: Docker
+  weight: 2
 
 - name: Jenkins
   weight: 1
@@ -26,7 +26,7 @@
 - name: npm
   weight: 2
 
-- name: gulp
+- name: intellij
   weight: 4
 
 - name: VS Code
@@ -34,3 +34,6 @@
 
 - name: Postman
   weight: 4
+
+- name: Eclipse
+  weight: 2
