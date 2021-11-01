@@ -22,9 +22,12 @@
   date: 2021 - 2021
   subtitle: Analista Desenvoldedor
   tags:
-    - tag: java 
+    - tag: java, Spring, Jsf, Primefaces, t 
     - tag: Mysql, Oracle, Postgresql
-    - tag: Spring, Jsf, Primefaces
+    - tag: Spring, Jsf, Primefaces, thymeleaf
+    - tag: Angular, Node js
+    - tag: Wildfly, Glassfish, Tomcat
+    - tag: OpenSSL
   timeline-side: left 
 
 - title: Recol distribuidora LTDA
