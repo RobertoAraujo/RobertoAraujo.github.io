@@ -15,7 +15,7 @@
 
 - name: Desafio-Angula-Spring
   descr: "Projeto simples que de fronte com angula onde o banck and esta na heroku as apis pode ser visualizadas pelo postmano u subindo a aplicação."
-  demo: https://github.com/RobertoAraujo/Desafio-angula-spring
+  demo: https://cadprodutoapi.herokuapp.com/
   tags:
     - tag: Mysql
     - tag: Heroku
