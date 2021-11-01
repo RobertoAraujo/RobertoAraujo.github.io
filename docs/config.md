@@ -12,7 +12,7 @@
 * `username`: This will displayed on the landing page as your name.
 
 * `typing_text`: This will be text, which will be typed before *scroll down for more*.
-  * set this to your job title, e.g. **Fullstack Developer**
+  * set this to your job title, e.g. ** Developer**
 * `email`: Your E-Mail address for the email button.
 * Social Link buttons:
   * For every social button you want to display, set your username or userid

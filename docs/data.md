@@ -71,7 +71,7 @@ Example of a timeline entry:
 - title: airbnb
   title-url: https://example.com/
   date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+  subtitle:  Developer
   tags:
     - tag: React
     - tag: Javascript
