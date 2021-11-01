@@ -17,15 +17,21 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: airbnb
-  title-url: https://robertoaraujo.github.io/
-  date: Sep 2021 - Present
-  subtitle: Developer
+- title: União Educacional do Norte - UNINORTE 
+  title-url: https://www.uninorteac.edu.br/
+  date: Formação 2012 - 2016 
+  subtitle: Analise de Sistemas
   tags:
     - tag: React
     - tag: Javascript
     - tag: Ruby
-    - tag: Rails
+    - tag: Php
+    - tag: Java
+    - tag: Angular
+    - tag: Oracle
+    - tag: Mysql
+    - tag: Postgres
+    - tag: Heroku
   timeline-side: right
 
 - title: Google
