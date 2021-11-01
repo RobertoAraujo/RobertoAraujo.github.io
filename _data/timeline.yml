@@ -36,7 +36,7 @@
 
 - title: Digitalinnovation One
   title-url: https://digitalinnovation.one/
-  date: jun 2021 - jun 2021
+  date: 2021 - 2021
   subtitle: Desenvolvimento básico em Java
   tags:
     - tag: Java 8
@@ -44,21 +44,38 @@
     - tag: Primeiro software
   timeline-side: left
 
-- title: Digitalinnovation On
+- title: Digitalinnovation 
   title-url: https://digitalinnovation.one/
-  date: jul 2021 - jul 2021
+  date:  2021 - 2021
   subtitle: Desenvolvimento avançado em Java
   tags:
     - tag: Java 
     - tag: Jsf
+    - tag: Spring
     - tag: Primefaces
   timeline-side: right
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
+- title:  LAMPP-IT Solutions
+  title-url: https://www.lampp-it.com.br/quemsomos.html
+  date: 2021 - 2021
+  subtitle: Analista Desenvoldedor
+  tags:
+    - tag: java 
+    - tag: Mysql, Oracle, Postgresql
+    - tag: Spring, Jsf, Primefaces
   timeline-side: left 
+
+- title: Recol distribuidora LTDA
+  title-url: http://gruporecol.net/v/empresas/recol-distribuidora/
+  date: 2020 - 2020
+  subtitle: Analista Desenvoldedor
+  tags:
+    - tag: Php 
+    - tag: Mysql
+    - tag: Html
+    - tag: Css
+    - tag: JavaScript
+  timeline-side: right
 
 - title: Facebook
   title-url: https://example.com/
