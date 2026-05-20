@@ -196,3 +196,253 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// ===== EFEITO TYPING (DIGITAÇÃO) =====
+function typeWriter(element, text, speed = 100) {
+    let index = 0;
+    element.textContent = '';
+    
+    function type() {
+        if (index < text.length) {
+            element.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+        }
+    }
+    
+    type();
+}
+
+// ===== FILTRO DE HABILIDADES INTERATIVO =====
+document.addEventListener('DOMContentLoaded', function() {
+    const skillCategories = document.querySelectorAll('[data-skill-category]');
+    
+    if (skillCategories.length > 0) {
+        // Criar botões de filtro dinamicamente
+        const categories = new Set();
+        skillCategories.forEach(skill => {
+            categories.add(skill.getAttribute('data-skill-category'));
+        });
+        
+        const filterContainer = document.createElement('div');
+        filterContainer.className = 'skill-filters';
+        filterContainer.style.display = 'flex';
+        filterContainer.style.gap = '10px';
+        filterContainer.style.marginBottom = '20px';
+        filterContainer.style.flexWrap = 'wrap';
+        filterContainer.style.justifyContent = 'center';
+        
+        // Botão "Todos"
+        const allBtn = document.createElement('button');
+        allBtn.textContent = 'Todos';
+        allBtn.className = 'filter-btn active';
+        allBtn.style.padding = '8px 16px';
+        allBtn.style.borderRadius = '20px';
+        allBtn.style.border = '2px solid #667eea';
+        allBtn.style.background = '#667eea';
+        allBtn.style.color = 'white';
+        allBtn.style.cursor = 'pointer';
+        allBtn.style.transition = 'all 0.3s ease';
+        allBtn.style.fontWeight = '600';
+        
+        allBtn.addEventListener('click', () => {
+            skillCategories.forEach(skill => {
+                skill.style.display = 'inline-block';
+                skill.style.animation = 'fadeIn 0.3s ease';
+            });
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.background = 'transparent';
+                btn.style.color = '#667eea';
+            });
+            allBtn.classList.add('active');
+            allBtn.style.background = '#667eea';
+            allBtn.style.color = 'white';
+        });
+        
+        filterContainer.appendChild(allBtn);
+        
+        categories.forEach(category => {
+            const btn = document.createElement('button');
+            btn.textContent = category;
+            btn.className = 'filter-btn';
+            btn.style.padding = '8px 16px';
+            btn.style.borderRadius = '20px';
+            btn.style.border = '2px solid #667eea';
+            btn.style.background = 'transparent';
+            btn.style.color = '#667eea';
+            btn.style.cursor = 'pointer';
+            btn.style.transition = 'all 0.3s ease';
+            btn.style.fontWeight = '600';
+            
+            btn.addEventListener('mouseenter', function() {
+                this.style.background = '#667eea';
+                this.style.color = 'white';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('active')) {
+                    this.style.background = 'transparent';
+                    this.style.color = '#667eea';
+                }
+            });
+            
+            btn.addEventListener('click', () => {
+                skillCategories.forEach(skill => {
+                    if (skill.getAttribute('data-skill-category') === category) {
+                        skill.style.display = 'inline-block';
+                        skill.style.animation = 'fadeIn 0.3s ease';
+                    } else {
+                        skill.style.display = 'none';
+                    }
+                });
+                
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('active');
+                    b.style.background = 'transparent';
+                    b.style.color = '#667eea';
+                });
+                btn.classList.add('active');
+                btn.style.background = '#667eea';
+                btn.style.color = 'white';
+                allBtn.classList.remove('active');
+            });
+            
+            filterContainer.appendChild(btn);
+        });
+        
+        const skillsSection = document.querySelector('.skills-section, [class*="skill"]');
+        if (skillsSection) {
+            skillsSection.insertBefore(filterContainer, skillsSection.firstChild);
+        }
+    }
+});
+
+// ===== TOGGLE DARK MODE =====
+document.addEventListener('DOMContentLoaded', function() {
+    const darkModeToggle = document.createElement('button');
+    darkModeToggle.innerHTML = '🌙';
+    darkModeToggle.className = 'dark-mode-toggle';
+    darkModeToggle.style.position = 'fixed';
+    darkModeToggle.style.bottom = '20px';
+    darkModeToggle.style.right = '20px';
+    darkModeToggle.style.zIndex = '1000';
+    darkModeToggle.style.width = '50px';
+    darkModeToggle.style.height = '50px';
+    darkModeToggle.style.borderRadius = '50%';
+    darkModeToggle.style.border = 'none';
+    darkModeToggle.style.background = '#667eea';
+    darkModeToggle.style.color = 'white';
+    darkModeToggle.style.cursor = 'pointer';
+    darkModeToggle.style.fontSize = '24px';
+    darkModeToggle.style.transition = 'all 0.3s ease';
+    darkModeToggle.style.boxShadow = '0 4px 12px rgba(102, 126, 234, 0.4)';
+    
+    darkModeToggle.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.1)';
+        this.style.boxShadow = '0 6px 16px rgba(102, 126, 234, 0.6)';
+    });
+    
+    darkModeToggle.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 4px 12px rgba(102, 126, 234, 0.4)';
+    });
+    
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.innerHTML = '☀️';
+    }
+    
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDark);
+        this.innerHTML = isDark ? '☀️' : '🌙';
+    });
+    
+    document.body.appendChild(darkModeToggle);
+});
+
+// ===== LAZY LOADING DE IMAGENS =====
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img[data-src]');
+    
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.getAttribute('data-src');
+                    img.removeAttribute('data-src');
+                    img.style.animation = 'fadeIn 0.5s ease';
+                    observer.unobserve(img);
+                }
+            });
+        });
+        
+        images.forEach(img => imageObserver.observe(img));
+    }
+});
+
+// ===== ADICIONAR ANIMAÇÕES CSS =====
+document.addEventListener('DOMContentLoaded', function() {
+    if (!document.querySelector('style[data-animations]')) {
+        const style = document.createElement('style');
+        style.setAttribute('data-animations', 'true');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            @keyframes slideInLeft {
+                from {
+                    opacity: 0;
+                    transform: translateX(-30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            
+            @keyframes slideInRight {
+                from {
+                    opacity: 0;
+                    transform: translateX(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            
+            @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.7; }
+            }
+            
+            .dark-mode {
+                background: #1a1a1a;
+                color: #e0e0e0;
+            }
+            
+            .dark-mode a {
+                color: #667eea;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+});
