@@ -19,6 +19,8 @@
 
 ## Sobre o Projeto
 
+![Preview do Portfólio](assets/images/preview.png)
+
 Este é um portfólio pessoal desenvolvido com HTML, CSS e JavaScript, hospedado no Github Pages. O site é responsivo e otimizado para dispositivos móveis, sendo um ótimo lugar para apresentar projetos, habilidades e experiência profissional.
 
 ### Construído Com
