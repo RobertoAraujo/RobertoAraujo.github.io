@@ -1,8 +1,12 @@
-# Meu Portfólio <!-- omit in toc -->
+# Portfólio <!-- omit in toc -->
 
-> Portfólio pessoal e profissional desenvolvido com HTML, CSS e JavaScript.
+> Template de portfólio responsivo construído com HTML5, CSS3 e JavaScript vanilla.
 
 [![License](https://badgen.net/github/license/RobertoAraujo/RobertoAraujo.github.io)](LICENSE)
+
+## Roberto Araújo - Portfólio Pessoal
+
+![Pré-visualização do Portfólio](assets/images/tele-inicial.png)
 
 ## Tabela de Conteúdos <!-- omit in toc -->
 
@@ -19,7 +23,7 @@
 
 ## Sobre o Projeto
 
-Este é um portfólio pessoal desenvolvido com HTML, CSS e JavaScript, hospedado no Github Pages. O site é responsivo e otimizado para dispositivos móveis, sendo um ótimo lugar para apresentar projetos, habilidades e experiência profissional.
+Template de portfólio moderno e responsivo desenvolvido com tecnologias web padrão (HTML5, CSS3, JavaScript). Otimizado para mobile-first, hospedagem gratuita no GitHub Pages e fácil de customizar para qualquer profissional.
 
 ### Construído Com
 
@@ -29,11 +33,13 @@ Este é um portfólio pessoal desenvolvido com HTML, CSS e JavaScript, hospedado
 
 ### Funcionalidades
 
-* Design Responsivo Mobile-First
-* Duas páginas principais (Início e Portfólio)
-* Estilos modernos e limpos
-* Fácil personalização
-* Hospedado gratuitamente no Github Pages
+* 📱 Design Responsivo (Mobile-First)
+* 🎨 Estilos modernos e limpos
+* ⚡ Performance otimizada
+* 🔧 Fácil de customizar
+* 🚀 Deploy automático com GitHub Actions
+* 📝 Página de contato com formulário
+* 🏠 Hospedagem gratuita no GitHub Pages
 
 ## Como Começar
 
@@ -48,13 +54,13 @@ Para obter uma cópia local em funcionamento, siga os passos abaixo.
 ### Instalação
 
 1. Clone o repositório
-
-```sh
-git clone https://github.com/RobertoAraujo/RobertoAraujo.github.io.git
+SEU_USUARIO/SEU_REPOSITORIO.git
 ```
 
 2. Navegue até a pasta do projeto
 
+```sh
+cd SEU_REPOSITORIO
 ```sh
 cd RobertoAraujo.github.io
 ```
@@ -77,19 +83,28 @@ npx http-server
 
 ```
 .
-├── index.html           # Página inicial
-├── portfolio.html       # Página do portfólio
-├── assets/              # Imagens e recursos
+├── index.html              # Página inicial
+├── portfolio.html          # Portfólio de projetos
+├── contact.html            # Formulário de contato
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # CI/CD automatizado
+├── assets/
+│   ├── images/             # Imagens
+│   ├── icons/              # Ícones SVG
+│   ├── fonts/              # Fontes customizadas
+│   └── data/               # Dados estáticos
 ├── css/
-│   └── styles.css      # Estilos globais
+│   └── styles.css          # Estilos globais
 └── js/
-    └── script.js       # Scripts JavaScript
+    └── script.js           # JavaScript
 ```
 
 ### Personalização
 
-#### Editando HTML
-
+#### Editando HTMLEdite nome, bio e informações pessoais
+* **portfolio.html** - Adicione seus projetos e trabalhos
+* **contact.html** - Personalize formulário de contato
 * **index.html** - Personalize seu nome, bio e informações de contato
 * **portfolio.html** - Adicione seus projetos e trabalhos
 
