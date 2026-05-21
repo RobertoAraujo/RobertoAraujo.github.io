@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Roberto Araújo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+</head>
+<body class="profile-page">
+    <div class="container">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Voltar
+        </a>
+
+        <div class="profile-card">
+            <!-- Ícone de Contato -->
+            <div style="margin-bottom: 30px;">
+                <i class="fas fa-envelope" style="font-size: 80px; opacity: 0.6; color: #667eea;"></i>
+            </div>
+
+            <!-- Título -->
+            <h1>Entre em Contato</h1>
+            <p class="title">Estou sempre aberto a novas oportunidades</p>
+
+            <!-- Seção de Formulário -->
+            <div class="contact-section" style="margin-top: 40px;">
+                <h2><i class="fas fa-envelope"></i> Envie uma Mensagem</h2>
+                
+                <div style="background: rgba(255, 193, 7, 0.1); border: 2px solid rgba(255, 193, 7, 0.3); border-radius: 12px; padding: 15px; margin-bottom: 25px; color: #FF9800; text-align: center;">
+                    <i class="fas fa-wrench" style="font-size: 1.2em; margin-right: 8px;"></i>
+                    <strong>Formulário em desenvolvimento</strong>
+                    <p style="margin-top: 5px; font-size: 0.9em;">Logo estará pronto para receber suas mensagens!</p>
+                </div>
+
+                <form id="contactForm" class="contact-form-portfolio" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="nome" class="form-label-dark">Seu Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required class="form-input-dark" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label-dark">Seu Email</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required class="form-input-dark" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto" class="form-label-dark">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required class="form-input-dark" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem" class="form-label-dark">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem aqui..." rows="5" required class="form-input-dark" disabled></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit-dark" id="submitBtn" disabled>
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+                <div id="successMessage" style="display: none; margin-top: 20px; padding: 15px; background: rgba(76, 175, 80, 0.1); border: 2px solid rgba(76, 175, 80, 0.3); border-radius: 12px; color: #4CAF50; text-align: center;">
+                    ✅ <strong>Obrigado!</strong> Logo entraremos em contato.
+                </div>
+            </div>
+
+            <!-- Informações de Contato -->
+            <div class="contact-section">
+                <h2><i class="fas fa-address-card"></i> Informações de Contato</h2>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:endriosrobert@gmail.com">endriosrobert@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+5568981054534">+ 55 (68) 98105-4534</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/5568981054534" target="_blank">WhatsApp: + 55 (68) 98105-4534</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/RobertoAraujo" target="_blank">github.com/RobertoAraujo</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/roberto-araújo-de-moraes-1a280587/" target="_blank">LinkedIn - Roberto Araújo</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Roberto Araújo. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Desabilitar o formulário
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            contactForm.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            setTimeout(() => {
+                contactForm.style.display = 'block';
+                successMessage.style.display = 'none';
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
