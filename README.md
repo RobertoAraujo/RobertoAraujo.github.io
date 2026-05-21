@@ -1,23 +1,20 @@
-# Roberto Araújo - Portfólio Pessoal 
+# Portfólio <!-- omit in toc -->
 
-<div align="center">
+> Template de portfólio responsivo construído com HTML5, CSS3 e JavaScript vanilla.
 
 <img src="assets/tele-inicial.png" alt="Preview do Portfólio" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3); margin: 20px 0;">
 
-</div>
+## Roberto Araújo - Portfólio Pessoal
+
+![Pré-visualização do Portfólio](assets/images/tele-inicial.png)
+
+## Tabela de Conteúdos <!-- omit in toc -->
 
 ---
 
 ## 📋 Tabela de Conteúdos
 
-* [✨ Sobre o Projeto](#-sobre-o-projeto)
-* [🎯 Funcionalidades](#-funcionalidades)
-* [🛠️ Tecnologias](#-tecnologias)
-* [🚀 Como Começar](#-como-começar)
-* [📁 Estrutura do Projeto](#-estrutura-do-projeto)
-* [✏️ Personalização](#-personalização)
-* [🤝 Contribuindo](#-contribuindo)
-* [📄 Licença](#-licença)
+Template de portfólio moderno e responsivo desenvolvido com tecnologias web padrão (HTML5, CSS3, JavaScript). Otimizado para mobile-first, hospedagem gratuita no GitHub Pages e fácil de customizar para qualquer profissional.
 
 ---
 
@@ -25,7 +22,13 @@
 
 Portfólio profissional desenvolvido para apresentar experiência, habilidades e projetos. O site é **completamente responsivo** e otimizado para todas as resoluções de tela, com design moderno e animações fluidas.
 
-**Hospedado gratuitamente no GitHub Pages** e atualizado continuamente com novos projetos e experiências.
+* 📱 Design Responsivo (Mobile-First)
+* 🎨 Estilos modernos e limpos
+* ⚡ Performance otimizada
+* 🔧 Fácil de customizar
+* 🚀 Deploy automático com GitHub Actions
+* 📝 Página de contato com formulário
+* 🏠 Hospedagem gratuita no GitHub Pages
 
 ---
 
@@ -43,31 +46,15 @@ Portfólio profissional desenvolvido para apresentar experiência, habilidades e
 
 ## 🛠️ Tecnologias
 
-### Frontend
-- **HTML5** - Estrutura semântica
-- **CSS3** - Flexbox, Grid, Animações, Gradientes
-- **JavaScript** - Interatividade e validações
-- **FontAwesome 6.4.0** - Ícones profissionais
-
-### Recursos
-- **GitHub Pages** - Hospedagem
-- **EmailJS** - Envio de formulários
-- **Responsive Design** - Mobile-first approach
+1. Clone o repositório
+SEU_USUARIO/SEU_REPOSITORIO.git
+```
 
 ---
 
-## 🚀 Como Começar
-
-### Pré-requisitos
-- Editor de texto (VSCode, Sublime Text, etc.)
-- Git instalado
-- Navegador web moderno
-
-### Instalação
-
-1. **Clone o repositório**
-```bash
-git clone https://github.com/RobertoAraujo/RobertoAraujo.github.io.git
+```sh
+cd SEU_REPOSITORIO
+```sh
 cd RobertoAraujo.github.io
 ```
 
@@ -93,22 +80,22 @@ http://localhost:8000
 ## 📁 Estrutura do Projeto
 
 ```
-RobertoAraujo.github.io/
-├── index.html              # Página inicial / Landing page
-├── portfolio.html          # Página de portfólio
-├── contact.html            # Página de contato
-├── README.md               # Este arquivo
-├── LICENSE                 # Licença do projeto
-│
+.
+├── index.html              # Página inicial
+├── portfolio.html          # Portfólio de projetos
+├── contact.html            # Formulário de contato
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # CI/CD automatizado
 ├── assets/
-│   └── images/
-│       └── preview.png     # Screenshot do portfólio
-│
+│   ├── images/             # Imagens
+│   ├── icons/              # Ícones SVG
+│   ├── fonts/              # Fontes customizadas
+│   └── data/               # Dados estáticos
 ├── css/
 │   └── styles.css          # Estilos globais
-│
 └── js/
-    └── script.js           # Scripts JavaScript
+    └── script.js           # JavaScript
 ```
 
 ---
@@ -117,15 +104,11 @@ RobertoAraujo.github.io/
 
 ### 📝 Editando HTML
 
-**index.html** - Página inicial
-- Seu nome e profissão
-- Bio/Descrição profissional
-- Links para redes sociais
-
-**portfolio.html** - Portfólio
-- Experiência profissional
-- Educação e certificações
-- Habilidades e tecnologias
+#### Editando HTMLEdite nome, bio e informações pessoais
+* **portfolio.html** - Adicione seus projetos e trabalhos
+* **contact.html** - Personalize formulário de contato
+* **index.html** - Personalize seu nome, bio e informações de contato
+* **portfolio.html** - Adicione seus projetos e trabalhos
 
 **contact.html** - Contato
 - Formulário de mensagens
