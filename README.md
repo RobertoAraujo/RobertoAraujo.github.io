@@ -1,6 +1,3 @@
-# Portfólio <!-- omit in toc -->
-
-> Template de portfólio responsivo construído com HTML5, CSS3 e JavaScript vanilla.
 ## Roberto Araújo - Portfólio Pessoal
 
 ![Pré-visualização do Portfólio](assets/images/tele-inicial.png)
