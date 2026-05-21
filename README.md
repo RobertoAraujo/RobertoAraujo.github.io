@@ -1,17 +1,8 @@
-# Roberto Araújo - Portfólio Pessoal 💻
+# Roberto Araújo - Portfólio Pessoal 
 
 <div align="center">
 
-![Preview do Portfólio](assets/images/preview.png)
-
-> Um portfólio moderno e responsivo desenvolvido com **HTML5**, **CSS3** e **JavaScript**
-
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
-[![License](https://badgen.net/github/license/RobertoAraujo/RobertoAraujo.github.io)](LICENSE)
-
-[Ver Site](https://robertoaraujo.github.io) • [GitHub](https://github.com/RobertoAraujo) • [LinkedIn](https://linkedin.com)
+<img src="assets/tele-inicial.png" alt="Preview do Portfólio" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3); margin: 20px 0;">
 
 </div>
 
