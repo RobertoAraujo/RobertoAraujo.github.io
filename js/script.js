@@ -1,6 +1,89 @@
 // Scripts globais e interatividade avançada
 
+// ===== EFEITO DE PÉTALAS DE CEREJEIRA CAINDO =====
+function initSakuraPetals() {
+    const container = document.body;
+    
+    // Criar container para pétalas
+    const petalsWrapper = document.createElement('div');
+    petalsWrapper.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 10;';
+    container.appendChild(petalsWrapper);
+
+    // Adicionar estilos CSS
+    const styles = document.createElement('style');
+    styles.innerHTML = `
+        @keyframes fall {
+            to { 
+                transform: translateY(100vh) rotate(360deg); 
+                opacity: 0;
+            }
+        }
+        
+        @keyframes sway {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(150px); }
+            75% { transform: translateX(-150px); }
+        }
+        
+        .petal-item {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: #FFB6C1;
+            border-radius: 50% 0;
+            opacity: 0.95;
+            animation: fall linear forwards;
+            box-shadow: 0 0 8px rgba(253, 96, 175, 0.6);
+        }
+    `;
+    document.head.appendChild(styles);
+
+    // Função para criar pétala
+    function createPetal() {
+        const petal = document.createElement('div');
+        petal.className = 'petal-item';
+        
+        // Tamanho aleatório (reduzido)
+        const size = 8 + Math.random() * 10;
+        petal.style.width = size + 'px';
+        petal.style.height = size + 'px';
+        
+        // Posição aleatória
+        const startX = Math.random() * window.innerWidth;
+        petal.style.left = startX + 'px';
+        petal.style.top = '-50px';
+        
+        // Duração aleatória
+        const duration = 10 + Math.random() * 8;
+        petal.style.animationDuration = duration + 's';
+        
+        // Rotação inicial
+        petal.style.transform = `rotate(${Math.random() * 360}deg)`;
+        
+        petalsWrapper.appendChild(petal);
+        
+        // Remover pétala quando cair
+        setTimeout(() => petal.remove(), duration * 1000);
+    }
+
+    // Criar pétalas continuamente
+    setInterval(createPetal, 400);
+    
+    // Criar algumas pétalas de início
+    for (let i = 0; i < 3; i++) {
+        createPetal();
+    }
+}
+
+// Iniciar assim que possível
+if (document.body) {
+    initSakuraPetals();
+} else {
+    document.addEventListener('DOMContentLoaded', initSakuraPetals);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+
     // Smooth scroll para links internos
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
